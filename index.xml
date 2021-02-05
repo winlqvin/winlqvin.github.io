@@ -6,7 +6,20 @@
     <description>Recent content on Anh Em Lap Trinh Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Feb 2021 20:40:11 +0700</lastBuildDate><atom:link href="https://anhemlaptrinh.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Feb 2021 17:09:52 +0700</lastBuildDate><atom:link href="https://anhemlaptrinh.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hướng dẫn học lập trình dành cho người mới bắt đầu</title>
+      <link>https://anhemlaptrinh.com/posts/huong-dan-hoc-lap-trinh/</link>
+      <pubDate>Fri, 05 Feb 2021 17:09:52 +0700</pubDate>
+      
+      <guid>https://anhemlaptrinh.com/posts/huong-dan-hoc-lap-trinh/</guid>
+      <description>Sau đây là hướng dẫn cơ bản nhất dành cho những bạn nào mới bắt đầu học lập trình.
+Bước 1 Mở trình duyệt và vào trang google.com
+Bước 2 Gõ &amp;ldquo;Học lập trình&amp;rdquo; vào khung tìm kiếm
+Bước 3 Bấm vào kết quả tìm kiếm, làm theo hướng dẫn.
+Chúc các bạn học lập trình vui.</description>
+    </item>
+    
     <item>
       <title>Setup Github Pages</title>
       <link>https://anhemlaptrinh.com/posts/setup-github-pages/</link>
