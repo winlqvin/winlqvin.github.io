@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Anh Em Lap Trinh Blog</title>
+    <title>Anh Em Lập Trình Blog</title>
     <link>https://anhemlaptrinh.com/</link>
-    <description>Recent content on Anh Em Lap Trinh Blog</description>
+    <description>Recent content on Anh Em Lập Trình Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 05 Feb 2021 17:09:52 +0700</lastBuildDate><atom:link href="https://anhemlaptrinh.com/index.xml" rel="self" type="application/rss+xml" />
@@ -21,12 +21,12 @@ Chúc các bạn học lập trình vui.</description>
     </item>
     
     <item>
-      <title>Setup Github Pages</title>
+      <title>Tạo web tĩnh miễn phí với Github Pages</title>
       <link>https://anhemlaptrinh.com/posts/setup-github-pages/</link>
       <pubDate>Tue, 02 Feb 2021 20:40:11 +0700</pubDate>
       
       <guid>https://anhemlaptrinh.com/posts/setup-github-pages/</guid>
-      <description></description>
+      <description>Đối với anh em lập trình, việc có nhiều side project trên Github là điều thường thấy. Trước đây, việc tạo ra một trang web để chia sẻ đối với anh em là điều không dễ. Một là mất phí cho hosting, hai là free hosting thì có nhiều quảng cáo. Nay với việc Github cho ra tiện ích Github Pages, coi như anh em có 1 free host không quảng cáo, deploy cực kỳ dễ dàng.</description>
     </item>
     
   </channel>
