@@ -6,7 +6,18 @@
     <description>Recent content on Anh Em Lập Trình Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Feb 2021 17:09:52 +0700</lastBuildDate><atom:link href="https://anhemlaptrinh.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Feb 2021 20:40:11 +0700</lastBuildDate><atom:link href="https://anhemlaptrinh.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mua tên miền và liên kết với GitHub Pages</title>
+      <link>https://anhemlaptrinh.com/posts/buy-a-domain-and-link-with-github-page/</link>
+      <pubDate>Sat, 20 Feb 2021 20:40:11 +0700</pubDate>
+      
+      <guid>https://anhemlaptrinh.com/posts/buy-a-domain-and-link-with-github-page/</guid>
+      <description>Chào các bạn!
+Hôm trước mình đã cùng trang GitHub để tạo web tĩnh miễn phí. Tuy nhiên nếu chưa có một tên miền thì cũng không hay ho lắm. Thử nghĩ xem giữa xyz.github.io và anhemlaptrinh.com thì rõ ràng một tên miền riêng là rất đáng để đầu tư. Dông dài như vậy là đủ rồi, bây giờ bắt tay vào làm thôi.
+Bước 1: Tìm một nhà cung cấp tên miền.</description>
+    </item>
+    
     <item>
       <title>Hướng dẫn học lập trình dành cho người mới bắt đầu</title>
       <link>https://anhemlaptrinh.com/posts/huong-dan-hoc-lap-trinh/</link>
