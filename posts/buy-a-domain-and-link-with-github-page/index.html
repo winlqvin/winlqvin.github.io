@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Hugo 0.80.0" />
+  <link rel="stylesheet" href="https://anhemlaptrinh.com/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+  
+  
+  <link rel="stylesheet" href="https://anhemlaptrinh.com/css/cayman.ea0e967413f3851071cc8ace3621bc4205fe8fa79b2abe3d7bf94ff2841f0d47.css">
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+  <title>Mua tên miền và liên kết với GitHub Pages | Anh Em Lập Trình Blog</title>
+</head>
+
+<body>
+  <section class="page-header">
+  <h1 class="project-name">
+    Anh Em Lập Trình Blog
+  </h1>
+  <h2 class="project-tagline">
+    Nơi chia sẻ kiến thức lập trình cho các anh em
+  </h2>
+  <nav>
+    
+    
+      
+      
+      
+      
+      <a href="/" class="btn">Blog</a>
+    
+      
+      
+      
+      
+      <a href="/tags/" class="btn">Tags</a>
+    
+      
+      
+      
+      
+      <a href="/about/" class="btn">About</a>
+    
+      
+      
+      
+      
+      <a href="/index.xml" class="btn">RSS</a>
+    
+  </nav>
+</section>
+
+  <section class="main-content">
+    
+  <h1>Mua tên miền và liên kết với GitHub Pages</h1>
+  <p>Chào các bạn!</p>
+<p>Hôm trước mình đã cùng trang GitHub để tạo web tĩnh miễn phí. Tuy nhiên nếu chưa có một tên miền thì cũng không hay ho lắm. Thử nghĩ xem giữa xyz.github.io và anhemlaptrinh.com thì rõ ràng một tên miền riêng là rất đáng để đầu tư.
+Dông dài như vậy là đủ rồi, bây giờ bắt tay vào làm thôi.</p>
+<p>Bước 1: Tìm một nhà cung cấp tên miền. GoDaddy là một ví dụ.</p>
+<p>Bước 2: Mua một tên miền, nhập tìm kiếm tên miền, chọn, trả $ và mua thôi. :D</p>
+<p><img src="../buy-a-domain-and-link-with-github-pages/find-domain-name.png" alt=""></p>
+<p>Bước 3: Liên kết với GitHub Pages</p>
+<p>Vào trình quản lý DNS của GoDaddy và bắt đầu cấu hình cho domain.</p>
+<p>Dòng đầu tiên A Record trỏ tới 185.199.108.153 (máy chủ GitHub)</p>
+<p>Dòng CNAME trỏ tới trang GitHub Pages của bạn</p>
+<p>Thêm 3 dòng A Record trỏ tới các địa chỉ sau: 185.199.109.153, 185.199.110.153, 185.199.111.153 (đều là máy chủ GitHub)</p>
+<p><img src="../buy-a-domain-and-link-with-github-pages/config-domain.png" alt=""></p>
+<p>Tới lúc này, nếu bạn gõ tên miền vào trình duyệt thì sẽ thấy như sau.</p>
+<p><img src="../buy-a-domain-and-link-with-github-pages/config-dns.png" alt=""></p>
+<p>Bước 4: Cấu hình tại GitHub Pages</p>
+<p>Vào Repository của GitHub Pages, thêm một file CNAME như sau:</p>
+<p>Tên file: CNAME
+Nội dung: tên miền bạn mua ở bước 2</p>
+<p>Commit và push file CNAME lên GitHub.</p>
+<p><img src="../buy-a-domain-and-link-with-github-pages/config-cname.png" alt=""></p>
+<p>Bước 5: Kiểm tra kết quả</p>
+<p>Vào trình duyệt và nhập tên miền mới mua, bạn sẽ thấy nội dung GitHub Pages hiện ra.</p>
+<p><img src="../buy-a-domain-and-link-with-github-pages/final-result.png" alt=""></p>
+<p>Bước 6: Vọc Github Pages.</p>
+<p>Mục tiêu của Github Pages là để bạn có một nơi chia sẽ các project với cộng đồng, các nhân mình thấy nó rất tiện cho việc vọc/học front-end. Các bài tiếp theo chúng ta sẽ vọc xem có thể làm được gì với một web tĩnh miễn phí này.</p>
+<p>Code thôi.</p>
+
+
+    <footer class="site-footer">
+  <span class="site-footer-credits">
+    
+  </span>
+</footer>
+
+  </section>
+  
+  
+
+</body>
+</html>

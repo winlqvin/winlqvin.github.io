@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Hugo 0.80.0" />
+  <link rel="stylesheet" href="https://anhemlaptrinh.com/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+  
+  
+  <link rel="stylesheet" href="https://anhemlaptrinh.com/css/cayman.ea0e967413f3851071cc8ace3621bc4205fe8fa79b2abe3d7bf94ff2841f0d47.css">
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+  <title>Viết Blog đơn giản với Hugo | Anh Em Lập Trình Blog</title>
+</head>
+
+<body>
+  <section class="page-header">
+  <h1 class="project-name">
+    Anh Em Lập Trình Blog
+  </h1>
+  <h2 class="project-tagline">
+    Nơi chia sẻ kiến thức lập trình cho các anh em
+  </h2>
+  <nav>
+    
+    
+      
+      
+      
+      
+      <a href="/" class="btn">Blog</a>
+    
+      
+      
+      
+      
+      <a href="/tags/" class="btn">Tags</a>
+    
+      
+      
+      
+      
+      <a href="/about/" class="btn">About</a>
+    
+      
+      
+      
+      
+      <a href="/index.xml" class="btn">RSS</a>
+    
+  </nav>
+</section>
+
+  <section class="main-content">
+    
+  <h1>Viết Blog đơn giản với Hugo</h1>
+  <p>Chào các bạn!</p>
+<p>Hôm trước chúng ta đã tạo static page với Github Pages và link với domain, hôm nay chúng ta sẽ từng bước viết một blog và đẩy lên Github Pages.</p>
+<p>Có rất nhiều công cụ để giúp chúng ta có thể viết một trang blog tĩnh (static site), và hugo là một công vụ dễ dàng, hiệu quả để làm việc đó.</p>
+<p>Nào chúng ta bắt đầu thôi!</p>
+<h3 id="bước-1-cài-đặt-hugo">Bước 1: Cài đặt Hugo</h3>
+<p>Lưu ý: mặc dù hugo được xây dừng bằng Golang, nhưng bạn không cần cài bất kì công cụ nào của Go để chạy được hugo, việc cài đặt sẽ sử dụng tập tin binary để chạy.</p>
+<p>Nếu bạn đang dùng MacOS, hãy cài hugo đơn giản với công cụ <a href="https://brew.sh/">brew</a></p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install hugo
+</code></pre></div><p>hoặc với MacPorts</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">port install hugo
+</code></pre></div><p>Nếu bạn dùng Windows, hãy cài hugo với công cụ <a href="https://chocolatey.org/">Chocolatey</a></p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">choco install hugo -confirm
+</code></pre></div><p>Sau khi cài đặt xong, bạn hãy kiểm tra lại cài đặt bằng lệnh</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo version
+</code></pre></div><p><img src="../viet-blog-don-gian-voi-hugo/hugo-verify-installing.png" alt=""></p>
+<h3 id="bước-2-tạo-blog">Bước 2: Tạo blog</h3>
+<p>Bạn chạy lệnh sau để khởi tạo một dự án bằng hugo.</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site &lt;name&gt;
+</code></pre></div><p>với <code>&lt;name&gt;</code> là tên website bạn muốn tạo.</p>
+<p>Ví dụ:
+<img src="../viet-blog-don-gian-voi-hugo/init-website.png" alt=""></p>
+<p>Sau đó, bạn vào thư mục website đã tạo, chạy lệnh sau để host website ở localhost của bạn</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server -D
+</code></pre></div><p><img src="../viet-blog-don-gian-voi-hugo/first-start.png" alt=""></p>
+<p>Như ví dụ trên, website của bạn đang chạy ở <code>http://localhost:58913/</code>. Vào địa chỉ đó bạn sẽ thấy một trang trắng trống không.</p>
+<p>Tiếp theo, chúng ta sẽ cài theme cho trang blog của chúng ta.</p>
+<h3 id="bước-3-cài-theme">Bước 3: Cài theme</h3>
+<p>Bạn vào trang <a href="https://themes.gohugo.io/">themes.gohugo.io</a> và tìm cho mình một theme ưng ý nhất.</p>
+<p>Ở đây mình chọn theme <a href="https://themes.gohugo.io/persian-hugo/">Persian Hugo</a> làm ví dụ.</p>
+<p><img src="../viet-blog-don-gian-voi-hugo/theme-persian-hugo.png" alt=""></p>
+<p>Theme hugo đều dùng source ở Git và cài bằng submodule của Git.</p>
+<p>Bạn cài thêm bằng các bước sau:</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git init
+git submodule add https://github.com/gethugothemes/persian-hugo.git themes/persian-hugo
+</code></pre></div><p><img src="../viet-blog-don-gian-voi-hugo/add-theme.png" alt=""></p>
+<p>Sau khi chạy lệnh trên, git sẽ clone source code của theme và đưa vào thư mục themes/persian-hugo</p>
+<p>Bạn chạy lệnh sau để thiết lập theme cho website</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#008000">echo</span> <span style="color:#ba2121">&#39;theme = &#34;persian-hugo&#34;&#39;</span> &gt;&gt; config.toml
+</code></pre></div><h3 id="bước-4-viết-bài-post-đầu-tiên">Bước 4: Viết bài post đầu tiên</h3>
+<p>Sau 3 bước trên cơ bản chúng ta đã tạo và cài đặt được theme cho website, bước này chúng ta sẽ viết một bài post, thêm nội dung cho trang web.</p>
+<p>Chạy lệnh sau để tạo một bài post.</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new posts/hello.md
+</code></pre></div><p><img src="../viet-blog-don-gian-voi-hugo/create-hello-post.png" alt=""></p>
+<p>Ở đây mình tạo một post có tên là hello với dịnh dạng <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet/">Markdown</a></p>
+<p>Chúng ta có file <code>posts/hello.md</code> với nội dung sau</p>
+<p><img src="../viet-blog-don-gian-voi-hugo/hello-post-code.png" alt=""></p>
+<p><code>draft: true</code> có nghĩa đây là post nháp, khi nào hoàn thành, bạn chuyển thành <code>draft: false</code> để deploy.</p>
+<h3 id="bước-5-config-cho-website">Bước 5: Config cho website</h3>
+<p>Theme của website cung cấp nhiều khả năng để config như title, header, footer.</p>
+<p>Các bạn tham khảo exampleSite của theme ở themes/persian-hugo/exampleSite để config lại cho phù hợp nhé.
+Chi tiết về config ở <a href="https://gohugo.io/getting-started/configuration/">đây</a>.</p>
+<p>Ví dụ file <code>config.toml</code></p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#408080;font-style:italic">######################## default configuration ####################</span>
+baseURL = <span style="color:#ba2121">&#34;https://benonfarm.com/&#34;</span>
+title = <span style="color:#ba2121">&#34;Benon Farm&#34;</span>
+theme = <span style="color:#ba2121">&#34;persian-hugo&#34;</span>
+languageName = <span style="color:#ba2121">&#34;En&#34;</span>
+languageCode = <span style="color:#ba2121">&#34;en-us&#34;</span>
+<span style="color:#408080;font-style:italic"># post pagination</span>
+paginate = <span style="color:#ba2121">&#34;5&#34;</span>
+<span style="color:#408080;font-style:italic"># disqus short name</span>
+disqusShortname = <span style="color:#ba2121">&#34;&#34;</span>
+publishdir = <span style="color:#ba2121">&#34;../username.github.io/&#34;</span>
+<span style="color:#408080;font-style:italic">############################# output ##############################</span>
+[outputs]
+home = [ <span style="color:#ba2121">&#34;HTML&#34;</span>, <span style="color:#ba2121">&#34;RSS&#34;</span>, <span style="color:#ba2121">&#34;json&#34;</span>]
+
+<span style="color:#408080;font-style:italic"># render unsafe html</span>
+[markup.goldmark.renderer]
+unsafe = <span style="color:#008000;font-weight:bold">true</span>
+
+<span style="color:#408080;font-style:italic">############################# Plugins ##############################</span>
+<span style="color:#408080;font-style:italic"># CSS Plugins</span>
+[[params.plugins.css]]
+link = <span style="color:#ba2121">&#34;plugins/bootstrap/bootstrap.min.css&#34;</span>
+[[params.plugins.css]]
+link = <span style="color:#ba2121">&#34;plugins/themify-icons/themify-icons.css&#34;</span>
+
+<span style="color:#408080;font-style:italic"># JS Plugins</span>
+[[params.plugins.js]]
+link = <span style="color:#ba2121">&#34;plugins/jQuery/jquery.min.js&#34;</span>
+[[params.plugins.js]]
+link = <span style="color:#ba2121">&#34;plugins/bootstrap/bootstrap.min.js&#34;</span>
+[[params.plugins.js]]
+link = <span style="color:#ba2121">&#34;plugins/search/fuse.min.js&#34;</span>
+[[params.plugins.js]]
+link = <span style="color:#ba2121">&#34;plugins/search/mark.js&#34;</span>
+[[params.plugins.js]]
+link = <span style="color:#ba2121">&#34;plugins/search/search.js&#34;</span>
+
+
+<span style="color:#408080;font-style:italic">################################ menu ##################################</span>
+[[menu.main]]
+name = <span style="color:#ba2121">&#34;Home&#34;</span>
+url = <span style="color:#ba2121">&#34;/&#34;</span>
+weight = <span style="color:#666">1</span>
+
+[[menu.main]]
+name = <span style="color:#ba2121">&#34;About&#34;</span>
+url = <span style="color:#ba2121">&#34;about&#34;</span>
+weight = <span style="color:#666">2</span>
+
+[[menu.main]]
+name = <span style="color:#ba2121">&#34;Category&#34;</span>
+url = <span style="color:#ba2121">&#34;categories/nature/&#34;</span>
+weight = <span style="color:#666">3</span>
+
+[[menu.main]]
+name = <span style="color:#ba2121">&#34;Contact&#34;</span>
+url = <span style="color:#ba2121">&#34;contact&#34;</span>
+weight = <span style="color:#666">4</span>
+
+[[menu.main]]
+name = <span style="color:#ba2121">&#34;Privacy Policy&#34;</span>
+url = <span style="color:#ba2121">&#34;privacy-policy&#34;</span>
+weight = <span style="color:#666">5</span>
+
+
+<span style="color:#408080;font-style:italic">#################### default parameters ################################</span>
+[params]
+logo = <span style="color:#ba2121">&#34;images/logo.png&#34;</span>
+<span style="color:#408080;font-style:italic"># Meta data</span>
+description = <span style="color:#ba2121">&#34;This is meta description&#34;</span>
+author = <span style="color:#ba2121">&#34;Themefisher&#34;</span>
+<span style="color:#408080;font-style:italic"># search</span>
+search = <span style="color:#008000;font-weight:bold">true</span>
+<span style="color:#408080;font-style:italic"># contact form action</span>
+contact_form_action = <span style="color:#ba2121">&#34;#&#34;</span>
+<span style="color:#408080;font-style:italic"># copyright</span>
+copyright = <span style="color:#ba2121">&#34;Designed By [Themefisher](https://themefisher.com/) &amp; Developed By [Gethugothemes](https://gethugothemes.com/)&#34;</span>
+
+<span style="color:#408080;font-style:italic"># Preloader</span>
+[params.preloader]
+enable = <span style="color:#008000;font-weight:bold">true</span>
+preloader = <span style="color:#ba2121">&#34;&#34;</span> <span style="color:#408080;font-style:italic"># use jpg, png, svg or gif format.</span>
+</code></pre></div><p>Bạn chú ý config <code>publishdir</code> sẽ chỉ định thư mục build của website để publish các post của bạn.</p>
+<p>Thông thường, bạn nên clone git repo của dự án Github Pages ở bài trước để cùng cấp với dự án Hugo, khi build thì nội dung sẽ được đưa vào Github Pages, sau đó bạn chỉ cần commit và đẩy nội dung Github Pages lên thôi.</p>
+<p>Và đây là thành quả.</p>
+<p><img src="../viet-blog-don-gian-voi-hugo/result.png" alt=""></p>
+<h3 id="bước-6-build-và-đẩy-lên-github-pages">Bước 6: Build và đẩy lên Github Pages</h3>
+<p>Bạn chạy lệnh sau để build website</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo -D
+</code></pre></div><p>Sau đó vào thư mục build, commit và push code lên Github Pages.</p>
+<p>Trên đây là cách để các bạn có tự mình xây dựng một trang web tĩnh bằng Hugo, sử dụng cú pháp Markdown để viết content và publish nội dung lên Github Pages.</p>
+<p>Chúc các bạn lập trình vui.</p>
+
+
+    <footer class="site-footer">
+  <span class="site-footer-credits">
+    
+  </span>
+</footer>
+
+  </section>
+  
+  
+
+</body>
+</html>

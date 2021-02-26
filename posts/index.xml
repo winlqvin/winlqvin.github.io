@@ -1,12 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Anh Em Lap Trinh Blog</title>
+    <title>Posts on Anh Em Lập Trình Blog</title>
     <link>https://anhemlaptrinh.com/posts/</link>
-    <description>Recent content in Posts on Anh Em Lap Trinh Blog</description>
+    <description>Recent content in Posts on Anh Em Lập Trình Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Feb 2021 17:09:52 +0700</lastBuildDate><atom:link href="https://anhemlaptrinh.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Feb 2021 13:36:56 +0700</lastBuildDate><atom:link href="https://anhemlaptrinh.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Viết Blog đơn giản với Hugo</title>
+      <link>https://anhemlaptrinh.com/posts/viet-blog-don-gian-voi-hugo/</link>
+      <pubDate>Thu, 25 Feb 2021 13:36:56 +0700</pubDate>
+      
+      <guid>https://anhemlaptrinh.com/posts/viet-blog-don-gian-voi-hugo/</guid>
+      <description>Chào các bạn!
+Hôm trước chúng ta đã tạo static page với Github Pages và link với domain, hôm nay chúng ta sẽ từng bước viết một blog và đẩy lên Github Pages.
+Có rất nhiều công cụ để giúp chúng ta có thể viết một trang blog tĩnh (static site), và hugo là một công vụ dễ dàng, hiệu quả để làm việc đó.
+Nào chúng ta bắt đầu thôi!</description>
+    </item>
+    
+    <item>
+      <title>Mua tên miền và liên kết với GitHub Pages</title>
+      <link>https://anhemlaptrinh.com/posts/buy-a-domain-and-link-with-github-page/</link>
+      <pubDate>Sat, 20 Feb 2021 20:40:11 +0700</pubDate>
+      
+      <guid>https://anhemlaptrinh.com/posts/buy-a-domain-and-link-with-github-page/</guid>
+      <description>Chào các bạn!
+Hôm trước mình đã cùng trang GitHub để tạo web tĩnh miễn phí. Tuy nhiên nếu chưa có một tên miền thì cũng không hay ho lắm. Thử nghĩ xem giữa xyz.github.io và anhemlaptrinh.com thì rõ ràng một tên miền riêng là rất đáng để đầu tư. Dông dài như vậy là đủ rồi, bây giờ bắt tay vào làm thôi.
+Bước 1: Tìm một nhà cung cấp tên miền.</description>
+    </item>
+    
     <item>
       <title>Hướng dẫn học lập trình dành cho người mới bắt đầu</title>
       <link>https://anhemlaptrinh.com/posts/huong-dan-hoc-lap-trinh/</link>
@@ -21,12 +44,12 @@ Chúc các bạn học lập trình vui.</description>
     </item>
     
     <item>
-      <title>Setup Github Pages</title>
+      <title>Tạo web tĩnh miễn phí với Github Pages</title>
       <link>https://anhemlaptrinh.com/posts/setup-github-pages/</link>
       <pubDate>Tue, 02 Feb 2021 20:40:11 +0700</pubDate>
       
       <guid>https://anhemlaptrinh.com/posts/setup-github-pages/</guid>
-      <description></description>
+      <description>Đối với anh em lập trình, việc có nhiều side project trên Github là điều thường thấy. Trước đây, việc tạo ra một trang web để chia sẻ đối với anh em là điều không dễ. Một là mất phí cho hosting, hai là free hosting thì có nhiều quảng cáo. Nay với việc Github cho ra tiện ích Github Pages, coi như anh em có 1 free host không quảng cáo, deploy cực kỳ dễ dàng.</description>
     </item>
     
   </channel>
