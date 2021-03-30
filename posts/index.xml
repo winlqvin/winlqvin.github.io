@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Anh Em Lập Trình Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Feb 2021 13:36:56 +0700</lastBuildDate><atom:link href="https://anhemlaptrinh.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Mar 2021 20:40:11 +0700</lastBuildDate><atom:link href="https://anhemlaptrinh.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Script để đổi collation của column</title>
+      <link>https://anhemlaptrinh.com/posts/script-to-change-column-collation/</link>
+      <pubDate>Tue, 30 Mar 2021 20:40:11 +0700</pubDate>
+      
+      <guid>https://anhemlaptrinh.com/posts/script-to-change-column-collation/</guid>
+      <description>DECLARE @collation NVARCHAR(64) SET @collation = &amp;#39;Latin1_General_CI_AS&amp;#39; SELECT &amp;#39;ALTER TABLE [&amp;#39; + TABLE_SCHEMA + &amp;#39;].[&amp;#39; + TABLE_NAME + &amp;#39;] &amp;#39; + &amp;#39;ALTER COLUMN [&amp;#39; + COLUMN_NAME + &amp;#39;] &amp;#39; + DATA_TYPE + &amp;#39;(&amp;#39; + CASE CHARACTER_MAXIMUM_LENGTH WHEN -1 THEN &amp;#39;MAX&amp;#39; ELSE CAST(CHARACTER_MAXIMUM_LENGTH AS VARCHAR) END + &amp;#39;) &amp;#39; + &amp;#39;COLLATE &amp;#39; + @collation + &amp;#39; &amp;#39; + CASE WHEN IS_NULLABLE = &amp;#39;NO&amp;#39; THEN &amp;#39;NOT NULL&amp;#39; ELSE &amp;#39;NULL&amp;#39; END FROM INFORMATION_SCHEMA.columns WHERE COLLATION_NAME IS NOT NULL AND TABLE_NAME IN ( SELECT TABLE_NAME from information_schema.</description>
+    </item>
+    
     <item>
       <title>Viết Blog đơn giản với Hugo</title>
       <link>https://anhemlaptrinh.com/posts/viet-blog-don-gian-voi-hugo/</link>
